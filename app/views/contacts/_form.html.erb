@@ -1,0 +1,38 @@
+<%= form_with(model: contact, local: true, html: { class: "basic-grey"}) do |form| %>
+  <% if contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+      <ul>
+      <% contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<h1> Contacts </h1>
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :contact_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :contact_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kind_id %>
+    <%= collection_select(:contact, :kind_id, @kind_options_for_select, :id, :description ) %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rmk %>
+    <%= form.text_area :rmk, id: :contact_rmk %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Enviar", class: "button" %>
+    <%= link_to 'Back', contacts_path, class: "button" %>
+  </div>
+<% end %>
