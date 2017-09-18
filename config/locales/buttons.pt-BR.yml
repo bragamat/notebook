@@ -1,0 +1,9 @@
+"pt-BR":
+  buttons:
+    show: Mostrar
+    edit: Editar
+    destroy: Apagar
+    new_contact: Novo Contato
+    new_kind: Novo Tipo
+    new_address: Novo Endereço
+    back: Voltar
