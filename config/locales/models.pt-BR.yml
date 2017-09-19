@@ -10,13 +10,13 @@
       kind:
         one: Tipo de Contato
         other: Tipos de Contatos
-      attributes:
+    attributes:
       contact:
-          name: "Nome"
-          email: "E-mail"
-          kind: "Tipo de Contato"
-          kind_id: "Tipo de Contato"
-          rmk: "Obs."
+          name: Nome
+          email: E-mail
+          kind: Tipo de Contato
+          kind_id: Tipo de Contato
+          rmk: Obs.
       address:
         street: Rua
         city: Cidade
@@ -24,7 +24,9 @@
         contact_id: Contato
         contact: Contato
         contact:
+          one: Contato
+          other: Contatos
     attributes:
       kind:
-         description: "Descrição"
+         description: Descrição
          kind: Tipo de Contato
