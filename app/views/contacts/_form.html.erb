@@ -39,8 +39,16 @@
 
     <div class="field">
       <%= address_fields.label :state %>
-      <%= address_fields.select :state, options_for_state(@contact.Address.state) %>
+      <%= address_fields.select :state, options_for_state(@contact.address.state) %>
     </div>
+
+  <% end %>
+
+  <%= form.fields_for :phones do |phones_fields| %>
+  <div class="field">
+    <%= phones_fields.label :phone %>
+    <%= phones_fields.text_field :phone %>
+  </div>
 
   <% end %>
 
