@@ -15,4 +15,8 @@
 //= require cocoon
 //= require_tree .
 
+/*
+alert ('Bem vindo ao Agenda 95k')
+*/
+
 

@@ -10,6 +10,9 @@
       kind:
         one: Tipo de Contato
         other: Tipos de Contatos
+      phone:
+        one: Telefone
+        other: Telefones
     attributes:
       contact:
           name: Nome
@@ -17,6 +20,7 @@
           kind: Tipo de Contato
           kind_id: Tipo de Contato
           rmk: Obs.
+          contact: Contato
       address:
         street: Rua
         city: Cidade
@@ -26,7 +30,9 @@
         contact:
           one: Contato
           other: Contatos
-    attributes:
       kind:
-         description: Descrição
-         kind: Tipo de Contato
+        description: Descrição
+        kind: Tipo de Contato
+      phone:
+        description: Descrição
+        
