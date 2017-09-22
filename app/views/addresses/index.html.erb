@@ -13,18 +13,16 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-
-  <tbody>
+ <tbody>
     <% @addresses.each do |address| %>
       <tr>
         <td><%= address.street %></td>
         <td><%= address.city %></td>
         <td><%= address.state %></td>
         <td><%= address.contact.name %></td>
-      <td><%= link_to t('buttons.show'), address %></td>
-      <td><%= link_to t('buttons.edit'), edit_address_path(address) %></td>
-      <td><%= link_to t('buttons.destroy'), address, method: :delete, data: { confirm: t('messages.confirm') } %></td>
-      </tr>
+    <td><%= link_to t('buttons.show'), address %></td>
+    <td><%= link_to t('buttons.edit'), edit_address_path(address) %></td>
+    <td><%= link_to t('buttons.destroy'), address, method: :delete, data: { confirm: t('messages.confirm') } %></td>  </tr>
     <% end %>
   </tbody>
 </table>

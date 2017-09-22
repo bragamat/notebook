@@ -10,6 +10,7 @@
       kind:
         one: Tipo de Contato
         other: Tipos de Contatos
+        kind: Tipo de Contato
       phone:
         one: Telefone
         other: Telefones

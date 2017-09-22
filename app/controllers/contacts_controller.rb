@@ -1,5 +1,7 @@
 class ContactsController < ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
+  before_action :set_options_for_select, only: [:new, :edit, :update, :create]
+
 
   # GET /contacts
   # GET /contacts.json
@@ -16,12 +18,10 @@ class ContactsController < ApplicationController
   def new
     @contact = Contact.new
     @contact.build_address
-    options_for_select
   end
 
   # GET /contacts/1/edit
   def edit
-    options_for_select
   end
 
   # POST /contacts
@@ -66,7 +66,7 @@ class ContactsController < ApplicationController
 
   private
 
-  def options_for_select
+  def set_options_for_select
     @kind_options_for_select = Kind.all
   end
     # Use callbacks to share common setup or constraints between actions.

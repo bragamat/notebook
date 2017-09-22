@@ -3,8 +3,14 @@ class PhonesController < ApplicationController
 
   # GET /phones
   # GET /phones.json
-  def index
-    @phones = Phone.all
+  def index 
+    #@phones = Phone.all.page(params[:page])
+   
+    respond_to do |format|
+        format.html { redirect_to @phone, notice: 'Phone was successfully updated.' }
+        format.js {  }
+    end
+  
   end
 
   # GET /phones/1

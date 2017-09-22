@@ -15,7 +15,7 @@
 
   <tbody>
     <% @phones.each do |phone| %>
-      <tr>
+      <tr style= "background: <%= cycle('white', '#f0f0f5') %>">
         <td><%= phone.phone %></td>
         <td><%= phone.contact.name %></td>
         <td><%= link_to 'Show', phone %></td>
@@ -25,9 +25,9 @@
     <% end %>
   </tbody>
 </table>
-
+<%= paginate @phones %>
 <br>
-
+<br>
 <%= link_to t('buttons.new_phone'), new_phone_path, class: "button" %>
 <%= link_to t('buttons.back'), home_index_path, class: "button" %>
 </div>
