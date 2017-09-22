@@ -5,6 +5,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps https://github.com/amatsuda/kaminari/…
+gem 'kaminari'
+
 #Dynamic nested forms using jQuery made easy; works with formtastic, simple_form or default forms
 gem 'cocoon'
 #

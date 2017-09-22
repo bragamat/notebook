@@ -25,6 +25,10 @@
 </table>
 
 <br>
+<%= paginate @contacts %>
+
+<br>
+<br>
 
 <%= link_to t('buttons.new_contact'), new_contact_path, class: "button"  %>
 <%= link_to t('buttons.back'), home_index_path, class: "button" %>
