@@ -22,4 +22,4 @@ Rails.application.config.assets.precompile += %w( alert.js
 												  home.css
 												  contacts.css
 												  phones.css
-												  kinds.css )
+												  kinds.css) 
