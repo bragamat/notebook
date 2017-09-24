@@ -10,6 +10,7 @@
     text-shadow: 1px 1px 1px #FFF;
     border:1px solid #E4E4E4;
 }
+
 table {
 
 width: 100%;
@@ -26,6 +27,7 @@ width: 100%;
 .basic-grey h1>span {
     display: block;
     font-size: 11px;
+    
 }
 .basic-grey label {
     display: block;
@@ -38,6 +40,7 @@ width: 100%;
     padding-right: 10px;
     margin-top: 10px;
     color: #888;
+
 }
 .basic-grey div.field_with_erros>label {
     float: left;
@@ -70,6 +73,7 @@ width: 100%;
     box-shadow: inset 0px 1px 4px #ECECEC;
     -moz-box-shadow: inset 0px 1px 4px #ECECEC;
     -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+
 }
 .basic-grey textarea{
     padding: 5px 3px 3px 5px;
@@ -85,6 +89,7 @@ width: 100%;
     width: 70%;
     height: 35px;
     line-height: 25px;
+
 }
 .basic-grey textarea{
     height:100px;
@@ -94,10 +99,11 @@ width: 100%;
     border: none;
     padding: 10px 25px 10px 25px;
     color: #FFF;
-    box-shadow: 1px 1px 5px #B6B6B6;
+    box-shadow: 3px 3px 8px #B6B6B6;
     border-radius: 3px;
     text-shadow: 1px 1px 1px #9E3F3F;
     cursor: pointer;
+    text-decoration: none
 }
 .basic-grey .button:hover {
     background: #CF7A7A

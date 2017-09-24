@@ -2,3 +2,6 @@
   messages:
     confirm: Você tem certeza ?
     listing: Listando
+    destroy: Item Apagado com Sucesso!
+    updated: Item Atualizado com Sucesso!
+    saved: Item Salvo com Sucesso!

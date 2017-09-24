@@ -6,9 +6,10 @@ git_source(:github) do |repo_name|
 end
 
 source 'https://rails-assets.org' do
-  gem 'rails-assets-notifyjs'
- 
- 
+
+gem 'rails-assets-notifyjs'
+gem 'rails-assets-bootstrap'
+
 end
 
 #Resolve o problema do cocoon

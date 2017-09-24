@@ -15,6 +15,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require notifyjs
+//= require_bootstrap
 //= require cocoon
 //= require_tree .
 
